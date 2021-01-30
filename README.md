@@ -10,3 +10,10 @@ ABP VNext 的空模板
 ````bash
 > abp new Acme.BookStore -t module --template-source 'E:\01 Work\01 ABP\templates' -v 3.3.2
 ````
+或者
+````bash
+> abp new Acme.BookStore -t module --template-source http://192.168.149.72:8900/baison/module-3.3.2.zip -v 3.3.2 --skip-cli-version-check
+````
+
+## ABP命令行
+> 请点击链接 [CLI documentation](https://docs.abp.io/en/abp/latest/CLI) 查看所有有效的选项。
