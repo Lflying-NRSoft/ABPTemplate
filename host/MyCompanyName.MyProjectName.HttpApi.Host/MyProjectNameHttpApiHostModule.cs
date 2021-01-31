@@ -16,6 +16,8 @@ using Volo.Abp.Caching;
 using Volo.Abp.EntityFrameworkCore;
 using Volo.Abp.Modularity;
 using Volo.Abp.Settings;
+using Volo.Abp.Caching.StackExchangeRedis;
+using Volo.Abp.EntityFrameworkCore.SqlServer;
 
 namespace MyCompanyName.MyProjectName
 {
@@ -25,8 +27,8 @@ namespace MyCompanyName.MyProjectName
     [DependsOn(typeof(MyProjectNameDapperModule))]
     [DependsOn(typeof(AbpAspNetCoreSerilogModule))]
     [DependsOn(typeof(AbpAutofacModule))]
-    [DependsOn(typeof(AbpSettingsModule))]
-    [DependsOn(typeof(AbpCachingModule))]
+    [DependsOn(typeof(AbpCachingStackExchangeRedisModule))]
+    [DependsOn(typeof(AbpEntityFrameworkCoreSqlServerModule))]
     [DependsOn(typeof(AbpAspNetCoreMvcModule))]
     public class MyProjectNameHttpApiHostModule : AbpModule
     {
