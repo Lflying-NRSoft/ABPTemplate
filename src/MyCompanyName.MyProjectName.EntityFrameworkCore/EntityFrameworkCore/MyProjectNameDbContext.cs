@@ -4,7 +4,7 @@ using Volo.Abp.EntityFrameworkCore;
 
 namespace MyCompanyName.MyProjectName.EntityFrameworkCore
 {
-    [ConnectionStringName("Default")]
+    [ConnectionStringName(MyProjectNameConsts.ConnectionStringName)]
     public class MyProjectNameDbContext : AbpDbContext<MyProjectNameDbContext>, IMyProjectNameDbContext
     {
         /* Add DbSet for each Aggregate Root here. Example:

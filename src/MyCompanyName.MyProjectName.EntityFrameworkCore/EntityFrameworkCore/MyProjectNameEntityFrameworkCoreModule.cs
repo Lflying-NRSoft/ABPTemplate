@@ -20,13 +20,6 @@ namespace MyCompanyName.MyProjectName.EntityFrameworkCore
 
                 options.AddDefaultRepositories(includeAllEntities: true);
             });
-
-            Configure<AbpDbContextOptions>(options =>
-            {
-                /* The main point to change your DBMS.
-                 * See also CacheServiceMigrationsDbContextFactory for EF Core tooling. */
-                options.UseSqlServer();
-            });
         }
     }
 }
