@@ -1,4 +1,5 @@
-﻿using Volo.Abp.Data;
+﻿using Microsoft.EntityFrameworkCore;
+using Volo.Abp.Data;
 using Volo.Abp.EntityFrameworkCore;
 
 namespace MyCompanyName.MyProjectName.EntityFrameworkCore
