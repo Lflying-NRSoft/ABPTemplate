@@ -22,8 +22,6 @@ ABP VNext 的空模板
 
 ## 数据库迁移
 
-### 连接字符串
-
 检查 `.HttpApi.Host` 项目下 `appsettings.json` 文件中的 **链接字符串**:
 
 ````json
@@ -32,10 +30,6 @@ ABP VNext 的空模板
 }
 ````
 
-#### 使用EF Core Update-Database命令
-
-Ef Core具有`Update-Database`命令, 可根据需要创建数据库并应用挂起的迁移. 右键单击`.Web`项目并选择**设置为启动项目**:
-
-打开**包管理器控制台(Package Manager Console)**, 选择`.EntityFrameworkCore.DbMigrations`项目作为**默认项目**并运行`Update-Database`命令:
+打开**包管理器控制台(Package Manager Console)**, 选择`.HttpApi.Host` 项目作为**默认项目**并运行`Update-Database`命令:
 
 
