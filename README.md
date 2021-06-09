@@ -29,7 +29,7 @@ ABP VNext 的空模板
   "Default": "Server=localhost;Database=BookStore;Trusted_Connection=True"
 }
 ````
-
+右键单击`.HttpApi.Host` 项目并选择设置为启动项目:
 打开**包管理器控制台(Package Manager Console)**, 选择`.HttpApi.Host` 项目作为**默认项目**并运行`Update-Database`命令:
 
 
