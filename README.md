@@ -32,5 +32,12 @@ ABP VNext 的空模板
 右键单击`.HttpApi.Host` 项目并选择设置为启动项目。
 
 打开**包管理器控制台(Package Manager Console)**, 选择`.HttpApi.Host` 项目作为**默认项目**并运行`Update-Database`命令:
+````bash
+Update-Database
+````
 
+创建一个新的迁移，打开**包管理器控制台(Package Manager Console)**, 选择`.HttpApi.Host` 项目作为**默认项目**并运行`Add-Migration Created_Book_Entity`命令:
+````bash
+Add-Migration Created_Book_Entity
+````
 
